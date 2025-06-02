@@ -21,9 +21,6 @@
       {
         "dockerTags": ["{{version}}", "{{major}}.{{minor}}", "{{major}}", "latest"],
         "dockerRegistry": "ghcr.io/apoorva64/test-docker-auto-push",
-        "dockerArgs": {
-          "DOCKER_BUILDKIT": 1
-        },
         "dockerLogin": false,
         "dockerBuildFlags": {
           "platform": "linux/amd64,linux/arm64",
