@@ -22,11 +22,7 @@
         "dockerTags": ["{{version}}", "{{major}}.{{minor}}", "{{major}}", "latest"],
         "dockerRegistry": "ghcr.io/apoorva64/test-docker-auto-push",
         "dockerLogin": false,
-        "dockerBuildFlags": {
-          "platform": "linux/amd64,linux/arm64",
-          "cache-from": "type=gha",
-          "cache-to": "type=gha,mode=max"
-        }
+        "dockerPlatform": ["linux/amd64", "linux/arm64"]
       }
     ],
     [
