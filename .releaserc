@@ -26,12 +26,11 @@
       "@codedependant/semantic-release-docker",
       {
         "dockerTags": ["{{version}}", "{{major}}.{{minor}}", "{{major}}", "latest"],
-        "dockerImage": "{{env.REGISTRY}}/{{env.IMAGE_NAME}}",
-        "dockerRegistry": "{{env.DOCKER_REGISTRY_URL}}",
-        "dockerProject": "{{env.IMAGE_NAME}}",
+        "dockerRegistry": "ghcr.io/apoorva64/test-docker-auto-push",
         "dockerArgs": {
           "DOCKER_BUILDKIT": 1
         },
+        "dockerLogin": false,
         "dockerBuildFlags": {
           "platform": "linux/amd64,linux/arm64",
           "cache-from": "type=gha",
